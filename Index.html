@@ -3,9 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <title>The Wishing Well</title>
-  <style> /* Styles as provided earlier */ </style>
+  <style>
+    /* Include your CSS styles here */
+    body { background: #0a1a0a; color: #f0f0f0; font-family: sans-serif; text-align:center; padding:20px; }
+    #welcome { opacity:0; transition: opacity 5s; margin-bottom:20px; }
+    /* Add other styles as needed */
+  </style>
 </head>
 <body>
-  <!-- HTML code for welcome, well, form, counter, audio, scripts -->
+  <div id="welcome">
+    <h1>Welcome to the Wishing Well</h1>
+    <p><em>A fountain of freedom</em></p>
+    <!-- Your full welcome message -->
+  </div>
+  <div id="well"></div>
+  <div id="form">
+    <input type="text" id="wish" placeholder="Whisper your wish..." size="30" />
+    <button id="toss">Toss into the Well</button>
+  </div>
+  <div id="counter">As of this very moment, <span id="count">1239</span> wishes have been cast.</div>
+  <button id="muteBtn">🔇 Mute</button>
+  <audio id="bgAudio" loop>
+    <source src="forest_solfeggio.mp3" type="audio/mp3" />
+  </audio>
+  <script>
+    // Include your JavaScript here to control word rain, audio, counter, etc.
+  </script>
 </body>
 </html>
+
